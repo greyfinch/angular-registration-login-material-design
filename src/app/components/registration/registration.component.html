@@ -1,0 +1,46 @@
+<mat-card class="example-card">  
+  <mat-card-title class="mat-header">
+    Registration
+  </mat-card-title>
+
+  <form class="my-form">
+    <mat-card-content>
+      <!-- CONTENT HERE -->
+        <mat-form-field class="full-width">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="First Name" name="fname" required>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Last Name" name="lname" required>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Address</mat-label>
+          <input matInput placeholder="Address" name="address" required>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" name="email" required>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" name="password" required>
+        </mat-form-field>
+        <section class="example-section">
+          <label class="example-margin">Gender</label>
+          <br />
+          <br />
+          <mat-radio-group>
+            <mat-radio-button class="example-margin" value="after">Male</mat-radio-button>
+          <br />
+          <br />
+            <mat-radio-button class="example-margin" value="before">Female</mat-radio-button>
+          </mat-radio-group>
+        </section>
+    </mat-card-content>
+    <mat-card-actions>
+      <!-- REGISTER BUTTON -->
+      <button mat-raised-button (click)="register()" color="primary">REGISTER</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
